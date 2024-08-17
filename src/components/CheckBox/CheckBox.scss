@@ -1,0 +1,16 @@
+@import "../../assets/sr-only.scss";
+@import "../../assets/variables.scss";
+
+.check-box {
+  width: 20px;
+  height: 20px;
+  background: url("public/unchecked.svg") no-repeat center;
+  appearance: none;
+
+  &:checked {
+    padding: 5px;
+    border-radius: 10px;
+    background: $checkbox-active url("public/checked.svg") no-repeat center;
+    appearance: none;
+  }
+}

@@ -1,0 +1,35 @@
+@import "../../assets/variables.scss";
+
+.status {
+  input {
+    appearance: none;
+  }
+  input:checked + label {
+    color: var(--Status-deactive, #979797);
+    output {
+      background: var(--Status-deactive, #979797);
+    }
+  }
+
+  &__type {
+    color: $status-active;
+    font-family: Pretendard;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: inline-flex;
+    gap: 4px;
+  }
+  &__count {
+    padding: 2px 4px;
+    border-radius: 4px;
+    background: $status-active;
+    color: $background;
+    font-family: Pretendard;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}

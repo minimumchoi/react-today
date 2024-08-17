@@ -1,0 +1,12 @@
+@import "../../assets/sr-only.scss";
+@import "../../assets/variables.scss";
+
+.archive-check-box {
+  width: 20px;
+  height: 20px;
+  background: url("public/ArchiveBoxUnchecked.svg") no-repeat center;
+  appearance: none;
+  &:checked {
+    background: url("public/ArchiveBoxChecked.svg") no-repeat center;
+  }
+}

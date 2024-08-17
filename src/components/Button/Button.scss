@@ -1,0 +1,27 @@
+@import "../../assets/variables.scss";
+
+.button {
+  padding: 18px 20px;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 12px;
+  border: none;
+
+  &--primary {
+    background: $button-background;
+    color: $button-label;
+  }
+
+  &--secondary {
+    background: $button-secondary-background;
+    color: $button-secondary-label;
+  }
+  &--disabled {
+    background: $button-disabled-background;
+    color: $button-disabled-label;
+  }
+}
