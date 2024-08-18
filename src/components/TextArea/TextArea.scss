@@ -1,0 +1,31 @@
+@import "../../assets/variables.scss";
+.todo-text-area {
+  width: 242px;
+  min-height: 63px;
+  max-height: 132px;
+  padding: 4px;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid $input-normal;
+  display: flex;
+  color: $input-focus;
+
+  &::placeholder {
+    color: $input-normal;
+    font-family: Pretendard;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%; /* 21px */
+  }
+  &:not(:placeholder-shown) {
+    border-bottom: 1px solid $input-focus;
+  }
+  &:focus {
+    border-bottom: 1px solid $input-focus;
+  }
+  &:focus::placeholder {
+    color: $input-focus;
+  }
+}

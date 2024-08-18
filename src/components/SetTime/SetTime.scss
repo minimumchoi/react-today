@@ -1,0 +1,48 @@
+@import "../../assets/variables.scss";
+
+.time-box {
+  width: 114px;
+  height: 29px;
+  display: inline-flex;
+  align-items: center;
+
+  input {
+    width: 39px;
+    height: 21px;
+    padding: 4px;
+    align-items: center;
+    font-size: 14px;
+    color: $time-focus;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid $time-normal;
+    text-align: center;
+
+    &::placeholder {
+      color: $time-normal;
+      text-overflow: ellipsis;
+      font-family: Pretendard;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 150%; /* 21px */
+    }
+
+    &:focus::placeholder {
+      color: $time-focus;
+    }
+
+    &:focus {
+      border-bottom: 1px solid $time-focus;
+    }
+
+    &:not(:placeholder-shown) {
+      border-bottom: 1px solid $time-focus;
+    }
+  }
+
+  span {
+    width: 20px;
+    text-align: center;
+    color: $time-normal;
+  }
+}

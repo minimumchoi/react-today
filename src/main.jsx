@@ -4,6 +4,9 @@ import CheckBox from "./components/CheckBox/CheckBox";
 import CheckBoxArchive from "./components/CheckBoxArchive/CheckBoxArchive";
 import Status from "./components/Stautus/Stauts";
 import TimeSelectBox from "./components/TimeSelectBox/TimeSelectBox";
+import SetTime from "./components/SetTime/SetTime";
+import TodoInput from "./components/TodoInput/TodoInput";
+import TextArea from "./components/TextArea/TextArea";
 
 const container = document.getElementById("root");
 createRoot(container).render(
@@ -20,5 +23,8 @@ createRoot(container).render(
     <Status count={1}>한일</Status>
     <Status count={2}>보관</Status>
     <TimeSelectBox />
+    <SetTime />
+    <TodoInput />
+    <TextArea />
   </>
 );

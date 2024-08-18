@@ -1,0 +1,73 @@
+@import "../../assets/variables.scss";
+
+.time-select {
+  width: 59px;
+  height: 28px;
+  position: relative;
+  border-radius: 6px;
+  border: 1px solid $select-border;
+  background: $select-background;
+
+  button {
+    width: 100%;
+    height: 100%;
+    padding: 6px 6px 6px 8px;
+    background-color: transparent;
+    display: inline-block;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    gap: 8px;
+    color: $select-selected;
+    font-family: Pretendard;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 12px */
+    cursor: pointer;
+
+    img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.optionList {
+  width: 27px;
+  padding: 6px 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  position: absolute;
+  left: 3px;
+  top: -10px;
+  border-radius: 6px;
+  border: 1px solid $select-border;
+  background: $select-background;
+  display: none;
+
+  &.active {
+    display: flex;
+  }
+
+  .optionItem {
+    color: $select-forground;
+    font-family: Pretendard;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    list-style: none;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-dodgerblue;
+    }
+    &.selected {
+      color: $select-selected;
+    }
+  }
+}
