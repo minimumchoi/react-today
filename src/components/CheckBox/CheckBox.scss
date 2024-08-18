@@ -2,6 +2,7 @@
 @import "../../assets/variables.scss";
 
 .check-box {
+  margin: 0;
   width: 20px;
   height: 20px;
   background: url("public/unchecked.svg") no-repeat center;

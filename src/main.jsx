@@ -7,11 +7,12 @@ import TimeSelectBox from "./components/TimeSelectBox/TimeSelectBox";
 import SetTime from "./components/SetTime/SetTime";
 import TodoInput from "./components/TodoInput/TodoInput";
 import TextArea from "./components/TextArea/TextArea";
+import DoItItem from "./components/DoItItem/DoItItem";
 
 const container = document.getElementById("root");
 createRoot(container).render(
   <>
-    <Button name={"+ 생각났어?"} type={"primary"} />
+    {/* <Button name={"+ 생각났어?"} type={"primary"} />
     <Button name={"레이블"} type={"secondary"} />
     <Button name={"레이블"} type={"disabled"} />
     <CheckBox />
@@ -25,6 +26,7 @@ createRoot(container).render(
     <TimeSelectBox />
     <SetTime />
     <TodoInput />
-    <TextArea />
+    <TextArea /> */}
+    <DoItItem title={"끝내주기 숨쉬기"} detail={"후하후하ㅏㅏ"} />
   </>
 );

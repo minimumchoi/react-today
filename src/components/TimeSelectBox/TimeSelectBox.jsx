@@ -34,7 +34,7 @@ function TimeSelectBox() {
         <span ref={label}>오전</span>
         <img src="/public/arrowDown.svg"></img>
       </button>
-      <ul ref={optionList} className="optionList">
+      <ul ref={optionList} className="option-list">
         <li className="optionItem">오전</li>
         <li className="optionItem">오전</li>
         <li className="optionItem">오후</li>
