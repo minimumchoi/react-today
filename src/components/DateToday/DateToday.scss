@@ -1,0 +1,22 @@
+@import "../../assets/variables.scss";
+
+.subtitle {
+  display: flex;
+  flex-flow: column;
+  gap: 8px;
+  color: $forground;
+  font-family: Pretendard;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+  :nth-child(2) {
+    color: $text-date;
+    font-size: 12px;
+    font-weight: 600;
+  }
+}

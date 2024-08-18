@@ -1,0 +1,54 @@
+@import "../../assets/variables.scss";
+
+.main-page {
+  box-sizing: border-box;
+  width: 320px;
+  height: 640px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background: $viewport;
+  position: relative;
+  overflow: hidden;
+
+  .logo {
+    margin: 90px 105px 44px;
+  }
+
+  .button {
+    margin-top: 27px;
+    width: 132px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
+    span {
+      text-align: center;
+    }
+  }
+  .status-group {
+    margin-top: 32px;
+    display: inline-flex;
+    gap: 16px;
+  }
+  .doit-item-group {
+    margin-top: 22px;
+    display: flex;
+    width: 260px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    overflow: auto;
+  }
+  .todo-modal {
+    position: absolute;
+    top: 640px;
+    left: 0;
+    transition: all 1s ease-in-out;
+    &.active {
+      top: 126px;
+    }
+  }
+}

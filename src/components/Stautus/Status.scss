@@ -5,14 +5,14 @@
     appearance: none;
   }
   input:checked + label {
-    color: var(--Status-deactive, #979797);
+    color: $status-active;
     output {
-      background: var(--Status-deactive, #979797);
+      background: $status-active;
     }
   }
 
   &__type {
-    color: $status-active;
+    color: $status-deactive;
     font-family: Pretendard;
     font-size: 14px;
     font-style: normal;
@@ -24,7 +24,7 @@
   &__count {
     padding: 2px 4px;
     border-radius: 4px;
-    background: $status-active;
+    background: $status-deactive;
     color: $background;
     font-family: Pretendard;
     font-size: 12px;

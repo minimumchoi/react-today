@@ -1,7 +1,8 @@
 import { useRef, useEffect } from "react";
 import "./TimeSelectBox.scss";
+import { useState } from "react";
 
-function TimeSelectBox() {
+function TimeSelectBox({ selectedItem, onTimeChange }) {
   const optionList = useRef(null);
   const label = useRef(null);
 
@@ -20,6 +21,10 @@ function TimeSelectBox() {
       optionItemList[0].classList.add("selected");
 
       label.current.textContent = item.textContent;
+      const selectedLabel = label.current.textContent;
+
+      onTimeChange(selectedLabel);
+
       optionList.current.classList.remove("active");
     };
 
@@ -35,7 +40,7 @@ function TimeSelectBox() {
         <img src="/public/arrowDown.svg"></img>
       </button>
       <ul ref={optionList} className="option-list">
-        <li className="optionItem">오전</li>
+        <li className="optionItem">{selectedItem}</li>
         <li className="optionItem">오전</li>
         <li className="optionItem">오후</li>
       </ul>
